@@ -3,10 +3,10 @@ name: Build Docker Image
 on:
   push:
     branches:
-      - main  # Or your default branch, e.g., 'master' or 'develop'
+      - master  # Or your default branch, e.g., 'master' or 'develop'
   pull_request:
     branches:
-      - main  # Trigger on PRs targeting main branch
+      - master  # Trigger on PRs targeting main branch
 
 jobs:
   build:
