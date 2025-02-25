@@ -12,7 +12,8 @@ from valve.source.messages import BufferExhaustedError  # Correct exception
 PERIOD = 900  # Relaunch every 15 minutes (900 seconds)
 SERVER_TIMEOUT = 5  # Avoid long hangs
 MASTER_TIMEOUT = 60
-DATA_PATH = "Data-25"
+#"DATA_PATH = "Data-25"
+DATA_PATH = os.getenv("DATA_PATH", "Data-25")
 VALVE_REGIONS = ['na-west', 'na-east', 'sa', 'eu', 'as', 'oc', 'af', 'rest']
 REGION = 5  # Set desired region
 MAX_WORKERS = 50  # Controls active threads
